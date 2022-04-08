@@ -9,8 +9,8 @@ export class SQLoginPage {
         cy.get(selectors.login.email_address,{ timeout: 60000 }).type(email, {log: false, delay: 100 })  
         cy.get(selectors.login.password).type(password, { log: false, force: true })
         cy.get(selectors.login.sign_in).click()
-        //cy.get(selectors.login.top_menu_button).click()
-       // cy.get(selectors.login.sign_out).click()
+    //     cy.get(selectors.login.top_menu_button).click()
+    //    cy.get(selectors.login.sign_out).click()
     }
 
     performSignOut() {

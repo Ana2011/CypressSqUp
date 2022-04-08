@@ -2,10 +2,10 @@ export default {
 
     login: {
         email_address: '#email',
-        password: '#password',
-        sign_in: '#sign-in-button',
+        password: 'input[name="password"]',
+        sign_in: 'market-button[name="sign-in-button"]',
         top_menu_button: '#account-menu-popover > button',
-        sign_out: '[href="/logout?return_to=/us/en/logout-redirect"]'
+        sign_out: 'a[href="/logout?return_to=/us/en/logout-redirect"]'
     },
 
     home: {

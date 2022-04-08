@@ -3,7 +3,7 @@ import {LoginPage} from '../support/page_objects/login'
 
 describe('Sign In', () => 
 {
-  before(function(){
+  it ('Login', function(){
     LoginPage.performLogin(Cypress.env('email'), Cypress.env('password'))
   })
      
@@ -11,7 +11,7 @@ describe('Sign In', () =>
     cy.contains(Cypress.env('user_name')).wait(6000)
   })
 
-  after(function(){
+  it ('SignOut', function(){
     LoginPage.performSignOut()
   })
 
