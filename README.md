@@ -1,1 +1,1 @@
-For Cypress
+Cypress Square Up
