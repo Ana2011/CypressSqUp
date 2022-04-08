@@ -11,13 +11,7 @@ describe('Create Invice', () =>
 
   
   it('Create Invoice', () => {
-    //cy.contains(selectors.home.home_sel, selectors.home.home_txt).click()
-    //cy.get(selectors.home.home_sel).click()
-    //cy.get(selectors.invoices.invoice).click()
-   // cy.get(selectors.invoices.invoice_button).eq(0).click()  
     cy.get(selectors.invoices.send_invoice_button.send_sel,{ timeout: 60000 }).click({ multiple: true }).parent()
-  //cy.wait(4000)
-
     cy.get(selectors.invoices.customer_name).wait(2000).type(test_data.main_page_customer.customer).wait(2000).type('{downarrow}').type('{enter}')
     cy.get(selectors.invoices.invoice_title).type(test_data.main_page_customer.invoice_title).click()
     cy.get(selectors.invoices.message).type(test_data.main_page_customer.message).click()
